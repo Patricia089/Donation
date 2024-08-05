@@ -13,7 +13,6 @@
             line-height: 1.6;
             background-color: #f0f2f5;
         }
-
         .container {
             max-width: 70%;
             margin: auto;
@@ -24,38 +23,12 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
-        h1,
-        h2 {
-            text-align: center;
-            color: #333333;
-            font-family: 'Playfair Display', serif;
-        }
+        h1, h2 { text-align: center; color: #333333; font-family: 'Playfair Display', serif; }
+        h1 { font-size: 3em;  margin-bottom: 10px; font-family: 'Playfair Display', serif; color: #800080;}
+        h2 {font-size: 1.5em; margin-top: 30px; margin-bottom: 10px; font-family: 'Playfair Display', serif;}
 
-        h1 {
-            font-size: 3em;
-            margin-bottom: 10px;
-            font-family: 'Playfair Display', serif;
-            color: #800080;
-        }
-
-        h2 {
-            font-size: 1.5em;
-            margin-top: 30px;
-            margin-bottom: 10px;
-            font-family: 'Playfair Display', serif;
-        }
-
-        .content {
-            text-align: justify;
-            color: #555555;
-            margin-bottom: 30px;
-        }
-
-        .content p {
-            font-size: 23px;
-            font-family: 'Playfair Display', serif;
-            font-weight: 500;
-        }
+        .content { text-align: justify; color: #555555; margin-bottom: 30px; }
+        .content p {font-size: 23px; font-family: 'Playfair Display', serif; font-weight: 500; }
 
         .support {
             text-align: center;
@@ -81,6 +54,10 @@
             border-radius: 10px;
             transition: transform 0.3s ease-in-out;
         }
+
+        /* .image img:hover {
+            transform: scale(1.05);
+        } */
 
         .image img:hover {
             transform: scale(1.1);
@@ -145,95 +122,6 @@
             margin-top: 20px;
             font-family: 'Playfair Display', serif;
         }
-
-        @media (max-width: 1024px) {
-            .container {
-                max-width: 90%;
-                padding: 0px 20px;
-            }
-
-            h1 {
-                font-size: 2.5em;
-            }
-
-            h2 {
-                font-size: 1.3em;
-            }
-
-            .content p {
-                font-size: 20px;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .flex-container {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .flex-container .image {
-                max-width: 100%;
-                margin-bottom: 20px;
-                text-align: center;
-            }
-
-            .flex-container .text {
-                max-width: 100%;
-            }
-
-            h1 {
-                font-size: 2em;
-            }
-
-            h2 {
-                font-size: 1.2em;
-            }
-
-            .content p {
-                font-size: 18px;
-            }
-
-            .cta {
-                font-size: 0.9em;
-            }
-        }
-
-        @media (max-width: 480px) {
-            body {
-                margin: 10px;
-            }
-
-            .container {
-                padding: 0px 10px;
-            }
-
-            h1 {
-                font-size: 1.8em;
-            }
-
-            h2 {
-                font-size: 1em;
-            }
-
-            .content p {
-                font-size: 16px;
-            }
-
-            .cta {
-                padding: 8px 16px;
-                font-size: 0.8em;
-            }
-
-            .flex-container .image img {
-                display: block;
-                margin: auto;
-            }
-
-            .image img {
-                display: block;
-                margin: auto;
-            }
-        }
     </style>
 </head>
 
@@ -241,7 +129,7 @@
     <div class="container">
         <h1>A Chance To Breathe Again</h1>
         <div class="image">
-            <img src="IMG5.jpg" alt="Image 1">
+            <img src="IMG5.jpg" style="margin-right: 90px;" alt="Image 1">
             <img src="IMG6.jpg" alt="Image 1">
         </div>
         <div class="content">
@@ -253,6 +141,7 @@
                     However, the financial burden of treatment has become overwhelming, as my life savings have been
                     exhausted.</p>
             </div>
+
         </div>
         <div class="content">
             <div class="flex-container">
